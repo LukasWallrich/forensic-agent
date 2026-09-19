@@ -1,0 +1,18 @@
+# Same agent type twice, on different backends/models, then adjudicated.
+schema_version: 1
+name: two-reviewers
+backend: {name: claude}
+
+stages:
+  - name: analysis
+    agents:
+      - use: peer_review
+        id: reviewer_stats
+        options: {focus: statistical reporting and sample sizes}
+      - use: peer_review
+        id: reviewer_methods
+        backend: {name: codex}
+        options: {focus: design, randomisation and measurement}
+  - name: adjudication
+    agents:
+      - use: adjudicator

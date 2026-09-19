@@ -1,0 +1,16 @@
+# Orchestration file: selects agents, their stage, tools and backend.
+# Backend precedence: per-agent `backend:` > CLI --backend/--model > `backend:` below.
+schema_version: 1
+name: default
+backend: {name: claude}
+
+stages:
+  - name: analysis              # agents within a stage run in parallel
+    agents:
+      - use: tortured_phrases   # no LLM
+      - use: tool_expert
+        tools: [grim, p_recompute, percent_check]
+      - use: peer_review
+  - name: adjudication
+    agents:
+      - use: adjudicator
