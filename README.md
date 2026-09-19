@@ -59,3 +59,7 @@ Precedence: per-agent `backend:` in the YAML > `--backend/--model` > YAML defaul
 ```
 pytest
 ```
+
+## Licence
+
+MIT — see [LICENSE](LICENSE).
