@@ -1,5 +1,7 @@
 # forensic-agent — modular design (v2, after review by Codex gpt-6-astra)
 
+> Vibe-coded prototype — see the README. Approach credited to Dan Elton / The Metascience Observatory.
+
 A small showcase rebuild of the Metascience Observatory's forensic metascience
 agent (paper in → parallel analysis agents → adjudication → report).
 Goal: demonstrate a *simple modular architecture*, not feature parity. The

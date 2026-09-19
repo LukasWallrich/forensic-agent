@@ -1,8 +1,23 @@
 # forensic-agent
 
-A small, modular showcase rebuild of the
-[Forensic Metascience Agent](https://metascienceobservatory.org/forensic-metascience-agent):
-paper in → parallel analysis agents → adjudication → report for human review.
+> ⚠️ **Vibe-coded prototype.** This repository was written almost entirely by
+> AI coding agents (Claude Code, with a design review by Codex) in a single
+> session, as an architecture sketch. The code has had little human review, the
+> agents and checks are deliberately simplistic, and it has only been run on a
+> fictional sample paper. **Do not rely on its output to assess real papers.**
+
+**Credit:** the approach — parallel forensic agents (tortured phrases,
+LLM-extracted claims verified by deterministic statistical tools such as GRIM
+and p-value recomputation, a peer-review agent) followed by an adjudication
+agent and human review — is that of the
+[Forensic Metascience Agent](https://metascienceobservatory.org/forensic-metascience-agent)
+by **Dan Elton / [The Metascience Observatory](https://metascienceobservatory.org)**.
+This is an independent, unaffiliated re-sketch of that idea to explore a modular
+code structure; it contains none of the original's code, its 44 tools, image
+forensics or review app. Errors here are ours, not theirs.
+
+A small, modular showcase: paper in → parallel analysis agents → adjudication →
+report for human review.
 See [DESIGN.md](DESIGN.md) for the architecture and its rationale.
 
 ```
